@@ -43,12 +43,13 @@
         display: flex;
         font-size: 14px;
         gap: 7px;
+        text-decoration: none;
 
         img {
           width: 100%;
           max-width: 21px;
         }
-        a{
+        span{
           color: #44566c;
           text-decoration: none;
         }
@@ -77,8 +78,6 @@
       border-radius: 0;
       width: auto;
       background-color: transparent;
-        &.open {
-        }
         &_menu{
             display: flex;
             flex-direction: row;
@@ -89,15 +88,36 @@
             &_li{
               display: flex;
               font-size: 14px;
-              color: #44566c;
               gap: 10px;
               background-color: white;
               box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
               padding: 8px 15px;
               border-radius: 7px;
+              transition: background-color 0.3s;
+              width: 130px;
               img{
                 width: 100%;
                 max-width: 21px;
+                transition: filter 0.3s;
+              }
+              &:hover{
+                background-color: gray;
+                img {
+                  filter: brightness(0) invert(1);
+                }
+                span{
+                  color: white;
+
+                }
+              }
+            }
+            .page_home{
+              background-color: gray;
+              span{
+                color: white;
+              }
+              img {
+                filter: brightness(0) invert(1);
               }
             }
             &_hamburger{
@@ -139,9 +159,31 @@
               box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
               padding: 8px 19px;
               border-radius: 7px;
+              width: 150px;
+              transition: background-color 0.3s;
               img{
                 width: 100%;
                 max-width: 21px;
+                transition: filter 0.3s;
+              }
+              &:hover{
+                background-color: gray;
+                img {
+                  filter: brightness(0) invert(1);
+                }
+                span{
+                  color: white;
+
+                }
+              }
+            }
+            .page_home{
+              background-color: gray;
+              span{
+                color: white;
+              }
+              img {
+                filter: brightness(0) invert(1);
               }
             }
             &_hamburger{
