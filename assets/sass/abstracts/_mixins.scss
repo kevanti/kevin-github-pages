@@ -23,3 +23,27 @@
     }
   }
 }
+
+
+@mixin resumeTitle(){
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  font-weight: 500;
+}
+@mixin resumeYear(){
+  color: #44566C;
+  font-size: 14px;
+  font-weight: 400;
+}
+@mixin resumeText(){
+  color: black;
+  font-size: 20px;
+}
+@mixin resumeInfo(){
+  color: #44566C;
+  font-size: 15px;
+  font-weight: 400;
+}

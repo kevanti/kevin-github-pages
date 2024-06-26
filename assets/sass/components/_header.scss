@@ -27,6 +27,7 @@
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    z-index: 2;
 
      &.open {
         max-height: 400px;

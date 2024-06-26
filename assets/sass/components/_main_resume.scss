@@ -1,0 +1,163 @@
+.main_resume{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 50px 20px;
+    margin: auto;
+    width: 90%;
+    
+    &_title{
+        margin-bottom: 40px;
+        position: relative;
+        &_text{
+            color: black;
+            font-weight: 700;
+            font-size: clamp(33px, 2vw + 1rem, 45px);
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 170px;
+                width: 65px;
+                height: 3px;
+                background-color: #0cb7f2;
+                transform: translateY(-50%);
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                &::after {
+                    left: 200px;
+                    width: 130px;
+                }
+            }
+            @media (min-width: 992px) and (max-width: 1400px) {
+                &::after {
+                    left: 225px;
+                    width: 150px;
+                }    
+            }
+            @media (min-width: 1401px) {
+                &::after {
+                    left: 270px;
+                    width: 160px;
+                }    
+            }
+        }
+    }
+    &_container{
+        margin-bottom: 50px;
+        .education_title{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            &_img{
+                img{
+                    width: 43px;
+                }
+            }
+            &_text{
+                @include resumeTitle();
+                
+            }
+        }
+        &_education{
+            
+            .education_container{
+                background-color: #FFF4F4;
+                padding: 20px 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                &_year{
+                    @include resumeYear();
+                }
+                &_school{
+                    @include resumeText();
+                }
+                &_location{
+                    @include resumeInfo();
+                }
+            }
+        }
+        .fjb{
+            .education_container{
+                background-color: #EEF5FA;
+            }
+            
+        }
+    }
+    &_experience{
+        margin-bottom: 50px;
+        .experience_title{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            img{
+                width: 37px;
+                
+            }
+            &_text{
+                @include resumeTitle();
+            }
+        }
+        &_container{
+            
+            .experience_container{
+                background-color: #FFF4F4;
+                padding: 20px 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                &_year{
+                    @include resumeYear();
+                }
+                &_compain{
+                    @include resumeText();
+                }
+                &_position{
+                    @include resumeInfo();
+                }
+            }
+        }
+        .mgs{
+            .experience_container{
+                background-color: #EEF5FA;
+            }
+        }
+    }
+    &_awards{
+        .awards_title{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            img{
+                width: 37px;
+                
+            }
+            &_text{
+                @include resumeTitle();
+            }
+        }
+        &_container{
+            .awards_container{
+                background-color: #FFF4F4;
+                padding: 20px 20px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+                &_name{
+                    @include resumeYear();
+                }
+                &_title{
+                    @include resumeText();
+                }
+                &_status{
+                    @include resumeInfo();
+                }
+            }
+            
+        }
+        .aws{
+            .awards_container{
+                background-color: #EEF5FA;
+            }
+        }
+    }
+}
