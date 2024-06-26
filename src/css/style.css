@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+#root {
+  background-image: url(../../assets/img/Rectangle_1.svg), url(../../assets/img/Rectangle_2.svg), url(../../assets/img/Rectangle_3.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: left 0, bottom 0 right -100px, top 0 right 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (min-width: 480px) {
+  #root {
+    background-size: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #root {
+    background-size: 250px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #root {
+    background-size: 300px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  #root {
+    background-size: 350px;
+  }
+}
+@media (min-width: 1441px) {
+  #root {
+    background-size: 380px;
+  }
+}
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  padding-top: 40px;
+}
+.header_name {
+  color: #0cb7f2;
+  font-family: "Black Ops One", sans-serif;
+  font-size: clamp(20px, 20px + 15 * (100vw - 320px) / 880, 29px);
+}
+.header_container {
+  width: 90%;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s linear;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.header_container.open {
+  max-height: 400px;
+}
+.header_container_menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 20px;
+  gap: 15px;
+}
+.header_container_menu_li {
+  display: flex;
+  font-size: 14px;
+  gap: 7px;
+}
+.header_container_menu_li img {
+  width: 100%;
+  max-width: 21px;
+}
+.header_container_menu_li a {
+  color: #44566c;
+  text-decoration: none;
+}
+.header_container_menu_hamburger {
+  background-color: #0cb7f2;
+  padding: 8px;
+  width: 100%;
+  max-width: 35px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.main_section_profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main_section_profile_container {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.main_section_profile_container_img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main_section_profile_name {
+  color: black;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.main_section_profile_study {
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.main_section_profile_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.main_section_profile_social_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  max-width: 35px;
+  height: 35px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s;
+}
+.main_section_profile_social_buttons img {
+  width: 100%;
+  max-width: 50%;
+  background: transparent;
+  transition: filter 0.3s;
+}
+.main_section_profile_social .github:hover {
+  background-color: black;
+}
+.main_section_profile_social .github:hover img {
+  filter: brightness(0) invert(1);
+}
+.main_section_profile_social .linkedin:hover {
+  background-color: #0077b5;
+}
+.main_section_profile_social .linkedin:hover img {
+  filter: brightness(0) invert(1);
+}
+.main_section_profile_social .instagram:hover {
+  background-color: #e1306c;
+}
+.main_section_profile_social .instagram:hover img {
+  filter: brightness(0) invert(1);
+}
+.main_section_profile_cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  font-weight: 500;
+  background-color: #0cb7f2;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+.main_section_profile_cv:hover {
+  transform: translateY(-5px);
+}/*# sourceMappingURL=style.css.map */
