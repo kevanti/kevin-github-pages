@@ -1,0 +1,113 @@
+.main {
+    &_section_profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &_container {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+
+            &_img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        &_name {
+            color: black;
+            font-weight: 600;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        &_study {
+            color: gray;
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        &_social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            margin-bottom: 30px;
+
+            &_buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                width: 100%;
+                max-width: 35px;
+                height: 35px;
+                border-radius: 10px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+                transition: background-color 0.3s;
+
+                img {
+                    width: 100%;
+                    max-width: 50%;
+                    background: transparent;
+                    transition: filter 0.3s;
+                }
+            }
+
+
+            .github:hover {
+                background-color: black;
+
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+
+            .linkedin:hover {
+                background-color: #0077b5;
+
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+
+            .instagram:hover {
+                background-color: #e1306c;
+
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+
+        &_cv {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: white;
+            font-weight: 500;
+            background-color: #0cb7f2;
+            padding: 10px;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: transform .2s;
+            &:hover{
+                transform: translateY(-5px);
+            }
+        }
+
+    }
+}
