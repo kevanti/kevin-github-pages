@@ -673,15 +673,15 @@ img {
 .main_work_title_text {
   color: black;
   font-weight: 700;
-  font-size: clamp(33px, 2vw + 1rem, 45px);
+  font-size: clamp(20px, 2vw + 1rem, 30px);
   position: relative;
 }
 .main_work_title_text::after {
   content: "";
   position: absolute;
   top: 50%;
-  left: 270px;
-  width: 65px;
+  left: 190px;
+  width: 55px;
   height: 3px;
   background-color: #0cb7f2;
   transform: translateY(-50%);
@@ -706,7 +706,8 @@ img {
 }
 .main_work_navegation {
   display: flex;
-  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 30px;
   position: relative;
 }
