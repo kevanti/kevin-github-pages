@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.container{
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: right top;
+    max-width: 1440px;
+    margin: auto;
+    padding: 15px 30px;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+nav>ul{
+    display: flex;
+    list-style: none;
+    gap: 70px;
+}
+li{
+    font-size: 20px;
+    font-weight: 300;
+    color: #424241;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: rgb(112, 226, 192);
+}
+h1{
+    font-size: 101px;
+    font-family: 'Bebas Neue';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 110px;
+    max-width: 900px;
+    color: #424241;
+}
+h1 span{
+    font-family: 'Bebas Neue';
+}
+main>article>p{
+    font-size: 20px;
+    color: #909090;
+    line-height: 25px;
+    max-width: 600px;
+
+}
+main>article>ul{
+    margin-top: 50px;
+    padding-left: 0;
+    width: max-content;
+}
+.discuss{
+    background: rgb(112, 226, 192);
+    padding: 10px 20px;
+    list-style: none;
+    margin-bottom: 30px;
+}
+.discuss>a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    width: max-content;
+}
+.containerMain{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 35px;
+}
+
+.containerMain>div>p{
+    text-align: center;
+    font-weight: 200;
+    color: #424241;
+}
+div>p:first-child{
+    font-size: 40px;
+    font-weight: bold;
+}
+div>p:last-child{
+    font-size: 17px;
+    font-weight: 300;
+    color: #909090;
+}
+
+.articleInformation{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+.articleInformation>section{
+    max-width: 300px;
+    padding: 30px;
+    background: white;
+}
+.bold{
+    font-size: 20px;
+    color: #424241;
+    margin-bottom: 5px;
+}
+.bold~p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    color: #909090;
+}
+.section1{
+    grid-column: 1 / span 1;
+}
+.section2{
+    grid-column: 2 / span 1;
+}
+.section3{
+    grid-column: 3 / span 1;
+}

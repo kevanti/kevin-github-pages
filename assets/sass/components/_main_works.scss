@@ -1,0 +1,148 @@
+.main_work{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 50px 20px;
+    margin: auto;
+    width: 90%;
+    &_title{
+        margin-bottom: 30px;
+        position: relative;
+        &_text{
+            color: black;
+            font-weight: 700;
+            font-size: clamp(33px, 2vw + 1rem, 45px);
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 270px;
+                width: 65px;
+                height: 3px;
+                background-color: #0cb7f2;
+                transform: translateY(-50%);
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                &::after {
+                    left: 300px;
+                    width: 130px;
+                }
+            }
+            @media (min-width: 992px) and (max-width: 1400px) {
+                &::after {
+                    left: 325px;
+                    width: 150px;
+                }    
+            }
+            @media (min-width: 1401px) {
+                &::after {
+                    left: 370px;
+                    width: 160px;
+                }    
+            }
+        }
+    }
+    &_navegation{
+        display: flex;
+        gap: 25px;
+        margin-bottom: 30px;
+        position: relative;
+        &_menu{
+            @include resumeInfo();
+            &:hover{
+                cursor: pointer;
+                color: #0cb7f2;
+            }
+        }
+        #todos{
+            color: #0cb7f2;
+            font-weight: 500;
+        }
+    }
+    &_all{
+        .article_proyect{
+            border-radius: 20px;
+            &_container{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 20px;
+
+            text-decoration: none;
+                &_img{
+                    margin-bottom: 15px;
+                    border-radius: 10px
+                }
+                &_text{
+                    display: flex;
+                    align-self: flex-start;
+                    &_title{
+                        @include resumeYear();
+                        
+                    }
+                }
+            }
+            
+            
+        }
+        .business{
+            background-color: #d9fdfa;
+        }
+        .creative{
+            background-color: #d5f0ff;
+        }
+        .zone{
+            background-color: #d9d8c7;
+        }
+        .nft{
+            background-color: #ffdae5;
+        }
+        .delivery{
+            background-color: #ffbfad;
+        }
+        .skin{
+            background-color: #e0f1ed;
+        }
+        .architecture{
+            background-color: #eaeaea;
+        }
+        .portfolio{
+            background-color: #dfdfdf;
+        }
+        .community{
+            background-color: #ffe0c1;
+        }
+        .food{
+            background-color: #faffc4;
+        }
+        .skill{
+            background-color: #ffb6bd;
+        }
+        .game{
+            background-color: #d3ffd3;
+        }
+        .faster{
+            background-color: #cce2ff;
+        }
+        .password{
+            background-color: #e1ffe5;
+        }
+        .manager{
+            background-color: #f7dbff;
+        }
+        .guide{
+            background-color: #ffeecb;
+        }
+
+    }
+    &_noReponsive{
+
+    }
+    .hidden{
+        display: none;
+    }
+
+}
