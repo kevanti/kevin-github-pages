@@ -24,8 +24,6 @@ img {
   background-image: url(../../assets/img/Rectangle_1.svg), url(../../assets/img/Rectangle_2.svg), url(../../assets/img/Rectangle_3.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: left 0, bottom 0 right -100px, top 0 right 0;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 @media (min-width: 480px) {
@@ -72,8 +70,8 @@ img {
 .main_section_profile_container_img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .main_section_profile_name {
   color: black;
@@ -502,18 +500,18 @@ img {
     width: 160px;
   }
 }
-.main_resume_container {
+.main_resume_block_container {
   margin-bottom: 50px;
 }
-.main_resume_container .education_title {
+.main_resume_block_container .education_title {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
 }
-.main_resume_container .education_title_img img {
+.main_resume_block_container .education_title_img img {
   width: 43px;
 }
-.main_resume_container .education_title_text {
+.main_resume_block_container .education_title_text {
   color: black;
   display: flex;
   justify-content: center;
@@ -521,41 +519,42 @@ img {
   font-size: 23px;
   font-weight: 500;
 }
-.main_resume_container_education .education_container {
+.main_resume_block_container_education .education_container {
   background-color: #FFF4F4;
   padding: 20px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  height: 140px;
 }
-.main_resume_container_education .education_container_year {
+.main_resume_block_container_education .education_container_year {
   color: #44566C;
   font-size: 14px;
   font-weight: 400;
 }
-.main_resume_container_education .education_container_school {
+.main_resume_block_container_education .education_container_school {
   color: black;
   font-size: 20px;
 }
-.main_resume_container_education .education_container_location {
+.main_resume_block_container_education .education_container_location {
   color: #44566C;
   font-size: 15px;
   font-weight: 400;
 }
-.main_resume_container .fjb .education_container {
+.main_resume_block_container .fjb .education_container {
   background-color: #EEF5FA;
 }
-.main_resume_experience {
+.main_resume_block_experience {
   margin-bottom: 50px;
 }
-.main_resume_experience .experience_title {
+.main_resume_block_experience .experience_title {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
 }
-.main_resume_experience .experience_title img {
+.main_resume_block_experience .experience_title img {
   width: 37px;
 }
-.main_resume_experience .experience_title_text {
+.main_resume_block_experience .experience_title_text {
   color: black;
   display: flex;
   justify-content: center;
@@ -563,38 +562,39 @@ img {
   font-size: 23px;
   font-weight: 500;
 }
-.main_resume_experience_container .experience_container {
+.main_resume_block_experience_container .experience_container {
   background-color: #FFF4F4;
   padding: 20px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  height: 140px;
 }
-.main_resume_experience_container .experience_container_year {
+.main_resume_block_experience_container .experience_container_year {
   color: #44566C;
   font-size: 14px;
   font-weight: 400;
 }
-.main_resume_experience_container .experience_container_compain {
+.main_resume_block_experience_container .experience_container_compain {
   color: black;
   font-size: 20px;
 }
-.main_resume_experience_container .experience_container_position {
+.main_resume_block_experience_container .experience_container_position {
   color: #44566C;
   font-size: 15px;
   font-weight: 400;
 }
-.main_resume_experience .mgs .experience_container {
+.main_resume_block_experience .mgs .experience_container {
   background-color: #EEF5FA;
 }
-.main_resume_awards .awards_title {
+.main_resume_block_awards .awards_title {
   display: flex;
   gap: 10px;
   margin-bottom: 30px;
 }
-.main_resume_awards .awards_title img {
+.main_resume_block_awards .awards_title img {
   width: 37px;
 }
-.main_resume_awards .awards_title_text {
+.main_resume_block_awards .awards_title_text {
   color: black;
   display: flex;
   justify-content: center;
@@ -602,28 +602,60 @@ img {
   font-size: 23px;
   font-weight: 500;
 }
-.main_resume_awards_container .awards_container {
+.main_resume_block_awards_container .awards_container {
   background-color: #FFF4F4;
   padding: 20px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  height: 140px;
 }
-.main_resume_awards_container .awards_container_name {
+.main_resume_block_awards_container .awards_container_name {
   color: #44566C;
   font-size: 14px;
   font-weight: 400;
 }
-.main_resume_awards_container .awards_container_title {
+.main_resume_block_awards_container .awards_container_title {
   color: black;
   font-size: 20px;
 }
-.main_resume_awards_container .awards_container_status {
+.main_resume_block_awards_container .awards_container_status {
   color: #44566C;
   font-size: 15px;
   font-weight: 400;
 }
-.main_resume_awards .aws .awards_container {
+.main_resume_block_awards .aws .awards_container {
   background-color: #EEF5FA;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  .main_resume_block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main_resume_block_container {
+    width: 48%;
+  }
+  .main_resume_block_experience {
+    width: 48%;
+  }
+  .main_resume_block_awards {
+    width: 48%;
+  }
+}
+@media (min-width: 1201px) {
+  .main_resume_block {
+    display: flex;
+    gap: 20px;
+  }
+  .main_resume_block_container {
+    flex: 1;
+  }
+  .main_resume_block_experience {
+    flex: 1;
+  }
+  .main_resume_block_awards {
+    flex: 1;
+  }
 }
 
 .header {
