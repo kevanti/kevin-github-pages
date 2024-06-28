@@ -30,8 +30,9 @@ noReponsive.addEventListener("click", (event)=>{
     sectionNoReponsive.classList.remove("hidden");
     allProjects.classList.add("hidden");
 
-    noReponsive.style.color= "#0cb7f2";
     todos.style.color= '#44566C';
+    noReponsive.style.color= "#0cb7f2";
+    reponsive.style.color = "#44566C";
     game.style.color = "#44566C";
 });
 
