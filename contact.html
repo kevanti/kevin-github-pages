@@ -61,56 +61,62 @@
         <section class="main_contact_title">
             <p class="main_contact_title_text">Contacto</p>
         </section>
-        <section class="main_contact_information">
-            <article class="information_article">
-                <div class="information_article_img">
-                    <img src="./assets/img/info/phone.svg" alt="">
-                </div>
-                <div class="information_article_text">
-                    <p class="text_title">Teléfono</p>
-                    <p class="text_number">+34 632835629</p>
-                </div>
-            </article>
+        <div class="main_contact_container">
+            <section class="main_contact_container_information">
+                <article class="information_article">
+                    <div class="information_article_img">
+                        <img src="./assets/img/info/phone.svg" alt="">
+                    </div>
+                    <div class="information_article_text">
+                        <p class="text_title">Teléfono</p>
+                        <p class="text_number">+34 632835629</p>
+                    </div>
+                </article>
+    
+                <article class="information_article">
+                    <div class="information_article_img">
+                        <img src="./assets/img/info/email.svg" alt="">
+                    </div>
+                    <div class="information_article_text">
+                        <p class="text_title">Gmail</p>
+                        <p class="text_number">kevin1alvarez1.69@gmail.com</p>
+                    </div>
+                </article>
+    
+                <article class="information_article">
+                    <div class="information_article_img">
+                        <img src="./assets/img/info/location.svg" alt="">
+                    </div>
+                    <div class="information_article_text">
+                        <p class="text_title">Direción</p>
+                        <p class="text_number">Granada - Dúrcal</p>
+                    </div>
+                </article>
+            </section>
 
-            <article class="information_article">
-                <div class="information_article_img">
-                    <img src="./assets/img/info/email.svg" alt="">
-                </div>
-                <div class="information_article_text">
-                    <p class="text_title">Gmail</p>
-                    <p class="text_number">kevin1alvarez1.69@gmail.com</p>
-                </div>
-            </article>
 
-            <article class="information_article">
-                <div class="information_article_img">
-                    <img src="./assets/img/info/location.svg" alt="">
-                </div>
-                <div class="information_article_text">
-                    <p class="text_title">Direción</p>
-                    <p class="text_number">Granada - Dúrcal</p>
-                </div>
-            </article>
-        </section>
-        <section class="main_contact_gmail">
-            <p class="main_contact_gmail_title">
-                Escribeme sobre cualquier duda o propuesta que tengas
-            </p>
-            <article class="main_contact_gmail_article">
-                <form action="https://formspree.io/f/mrbzzngw" method="POST" class="form_contact">
-                    <label class="form_contact_label" id="label_name">Nombre*</label>
-                    <input class="form_contact_input" id="input_name" type="text" name="text" required>
-
-                    <label class="form_contact_label" id="label_email">Email*</label>
-                    <input class="form_contact_input" id="input_email" type="email" name="email" required>
-
-                    <label class="form_contact_label" id="label_textArea">Mensaje*</label>
-                    <textarea class="form_contact_textArea" id="input_textArea" required></textarea>
-            
-                    <button class="form_contact_send" type="submit">Enviar</button>
-                    </form>
-            </article>
-        </section>
+            <section class="main_contact_container_gmail">
+                <p class="main_contact_container_gmail_title">
+                    Escribeme sobre cualquier duda o propuesta que tengas
+                </p>
+                <article class="main_contact_container_gmail_article">
+                    <form action="https://formspree.io/f/mrbzzngw" method="POST" class="form_contact">
+                        <label class="form_contact_label" id="label_name">Nombre*</label>
+                        <input class="form_contact_input" id="input_name" type="text" name="text" required>
+    
+                        <label class="form_contact_label" id="label_email">Email*</label>
+                        <input class="form_contact_input" id="input_email" type="email" name="email" required>
+    
+                        <label class="form_contact_label" id="label_textArea">Mensaje*</label>
+                        <textarea class="form_contact_textArea" id="input_textArea" required></textarea>
+                
+                        <button class="form_contact_send" type="submit">Enviar</button>
+                        </form>
+                </article>
+            </section>
+        </div>
+        
+        
         
       </main>
       

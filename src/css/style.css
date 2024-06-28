@@ -845,7 +845,8 @@ img {
   padding: 20px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-  height: 140px;
+  height: -moz-min-content;
+  height: min-content;
 }
 .main_resume_block_container_education .education_container_year {
   color: #44566C;
@@ -888,7 +889,8 @@ img {
   padding: 20px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-  height: 140px;
+  height: -moz-min-content;
+  height: min-content;
 }
 .main_resume_block_experience_container .experience_container_year {
   color: #44566C;
@@ -928,7 +930,8 @@ img {
   padding: 20px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-  height: 140px;
+  height: -moz-min-content;
+  height: min-content;
 }
 .main_resume_block_awards_container .awards_container_name {
   color: #44566C;
@@ -1025,10 +1028,10 @@ img {
     width: 160px;
   }
 }
-.main_contact_information {
+.main_contact_container_information {
   margin-bottom: 50px;
 }
-.main_contact_information .information_article {
+.main_contact_container_information .information_article {
   display: flex;
   gap: 25px;
   background-color: #FFF4F4;
@@ -1036,10 +1039,10 @@ img {
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.main_contact_information .information_article_img img {
+.main_contact_container_information .information_article_img img {
   width: 27px;
 }
-.main_contact_information .information_article_text .text_title {
+.main_contact_container_information .information_article_text .text_title {
   color: black;
   display: flex;
   justify-content: center;
@@ -1048,57 +1051,73 @@ img {
   font-weight: 500;
   justify-content: start;
   font-size: 17px;
+  font-size: clamp(18px, 0.68vw + 12.35px, 22px);
 }
-.main_contact_information .information_article_text .text_number {
+.main_contact_container_information .information_article_text .text_number {
   color: #44566C;
   font-size: 15px;
   font-weight: 400;
+  font-size: clamp(15px, 0.68vw + 10px, 18px);
 }
-.main_contact_gmail {
+@media (min-width: 992px) and (max-width: 1400px) {
+  .main_contact_container_information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main_contact_container_information .information_article {
+    width: 49%;
+  }
+}
+.main_contact_container_gmail {
   background-color: #F8FBFB;
   padding: 20px 20px;
   border-radius: 15px;
 }
-.main_contact_gmail_title {
+.main_contact_container_gmail_title {
   color: #44566C;
   font-size: 15px;
   font-weight: 400;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 40px;
+  font-size: clamp(18px, 0.68vw + 12.35px, 23px);
 }
-.main_contact_gmail_article .form_contact {
+.main_contact_container_gmail_article .form_contact {
   display: flex;
   flex-direction: column;
 }
-.main_contact_gmail_article .form_contact_label {
+.main_contact_container_gmail_article .form_contact_label {
   color: #44566C;
   font-size: 15px;
   font-weight: 400;
   transition: margin-bottom 0.2s ease-in;
+  font-size: clamp(16px, 0.68vw + 10px, 18px);
 }
-.main_contact_gmail_article .form_contact_input {
+.main_contact_container_gmail_article .form_contact_input {
   border: none;
   border-bottom: 1px solid black;
   margin-bottom: 20px;
   color: black;
   background-color: transparent;
+  font-size: clamp(14px, 0.68vw + 10px, 18px);
   padding: 3px;
 }
-.main_contact_gmail_article .form_contact_input:focus {
+.main_contact_container_gmail_article .form_contact_input:focus {
   outline: none;
 }
-.main_contact_gmail_article .form_contact_textArea {
+.main_contact_container_gmail_article .form_contact_textArea {
   border: none;
   border-bottom: 1px solid black;
   margin-bottom: 40px;
   color: black;
   background-color: transparent;
+  font-size: clamp(14px, 0.68vw + 10px, 18px);
 }
-.main_contact_gmail_article .form_contact_textArea:focus {
+.main_contact_container_gmail_article .form_contact_textArea:focus {
   outline: none;
 }
-.main_contact_gmail_article .form_contact_send {
+.main_contact_container_gmail_article .form_contact_send {
   background-color: #8bddf8;
   border: none;
   color: #44566C;
@@ -1107,6 +1126,20 @@ img {
   width: max-content;
   padding: 4px 10px;
   border-radius: 10px;
+  font-size: clamp(15px, 0.68vw + 10px, 18px);
+}
+@media (min-width: 1401px) {
+  .main_contact_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .main_contact_container_information {
+    width: 35%;
+  }
+  .main_contact_container_gmail {
+    width: 65%;
+  }
 }
 
 .header {

@@ -68,7 +68,7 @@
                     padding: 20px 20px;
                     border-radius: 10px;
                     margin-bottom: 20px;
-                    height: 140px;
+                    height: min-content;
                     &_year{
                         @include resumeYear();
                     }
@@ -109,7 +109,7 @@
                     padding: 20px 20px;
                     border-radius: 10px;
                     margin-bottom: 20px;
-                    height: 140px;
+                    height: min-content;
                     &_year{
                         @include resumeYear();
                     }
@@ -147,7 +147,7 @@
                     padding: 20px 20px;
                     border-radius: 10px;
                     margin-bottom: 20px;
-                    height: 140px;
+                    height: min-content;
                     &_name{
                         @include resumeYear();
                     }
