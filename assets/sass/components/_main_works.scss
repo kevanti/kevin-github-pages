@@ -54,7 +54,6 @@
             @include resumeInfo();
             &:hover{
                 cursor: pointer;
-                color: #0cb7f2;
             }
         }
         #todos{
@@ -90,58 +89,60 @@
             
             
         }
-        .business{
-            background-color: #d9fdfa;
-        }
-        .creative{
-            background-color: #d5f0ff;
-        }
-        .zone{
-            background-color: #d9d8c7;
-        }
-        .nft{
-            background-color: #ffdae5;
-        }
-        .delivery{
-            background-color: #ffbfad;
-        }
-        .skin{
-            background-color: #e0f1ed;
-        }
-        .architecture{
-            background-color: #eaeaea;
-        }
-        .portfolio{
-            background-color: #dfdfdf;
-        }
-        .community{
-            background-color: #ffe0c1;
-        }
-        .food{
-            background-color: #faffc4;
-        }
-        .skill{
-            background-color: #ffb6bd;
-        }
-        .game{
-            background-color: #d3ffd3;
-        }
-        .faster{
-            background-color: #cce2ff;
-        }
-        .password{
-            background-color: #e1ffe5;
-        }
-        .manager{
-            background-color: #f7dbff;
-        }
-        .guide{
-            background-color: #ffeecb;
-        }
-
     }
     &_noReponsive{
-
+        .article_proyect{
+            border-radius: 20px;
+            &_container{
+                @include styleContainer();
+                &_img{
+                    @include styleImg();
+                }
+                &_text{
+                    @include styleText();
+                    &_title{
+                        @include resumeYear();
+                        
+                    }
+                }
+            }
+        }
+    }
+    &_responsive{
+        .article_proyect{
+            border-radius: 20px;
+            &_container{
+                @include styleContainer();
+                &_img{
+                    @include styleImg();
+                }
+                &_text{
+                    @include styleText();
+                    &_title{
+                        @include resumeYear();
+                        
+                    }
+                }
+            }
+        }
+    }
+    &_games{
+        .article_proyect{
+            border-radius: 20px;
+            &_container{
+                @include styleContainer();
+                &_img{
+                    @include styleImg();
+                }
+                &_text{
+                    @include styleText();
+                    &_title{
+                        @include resumeYear();
+                        
+                    }
+                }
+            }
+        }
     }
     .hidden{
         display: none;

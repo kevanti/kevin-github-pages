@@ -719,7 +719,6 @@ img {
 }
 .main_work_navegation_menu:hover {
   cursor: pointer;
-  color: #0cb7f2;
 }
 .main_work_navegation #todos {
   color: #0cb7f2;
@@ -750,53 +749,80 @@ img {
   font-size: 14px;
   font-weight: 400;
 }
-.main_work_all .business {
-  background-color: #d9fdfa;
+.main_work_noReponsive .article_proyect {
+  border-radius: 20px;
 }
-.main_work_all .creative {
-  background-color: #d5f0ff;
+.main_work_noReponsive .article_proyect_container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
-.main_work_all .zone {
-  background-color: #d9d8c7;
+.main_work_noReponsive .article_proyect_container_img {
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
-.main_work_all .nft {
-  background-color: #ffdae5;
+.main_work_noReponsive .article_proyect_container_text {
+  display: flex;
+  align-self: flex-start;
 }
-.main_work_all .delivery {
-  background-color: #ffbfad;
+.main_work_noReponsive .article_proyect_container_text_title {
+  color: #44566C;
+  font-size: 14px;
+  font-weight: 400;
 }
-.main_work_all .skin {
-  background-color: #e0f1ed;
+.main_work_responsive .article_proyect {
+  border-radius: 20px;
 }
-.main_work_all .architecture {
-  background-color: #eaeaea;
+.main_work_responsive .article_proyect_container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
-.main_work_all .portfolio {
-  background-color: #dfdfdf;
+.main_work_responsive .article_proyect_container_img {
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
-.main_work_all .community {
-  background-color: #ffe0c1;
+.main_work_responsive .article_proyect_container_text {
+  display: flex;
+  align-self: flex-start;
 }
-.main_work_all .food {
-  background-color: #faffc4;
+.main_work_responsive .article_proyect_container_text_title {
+  color: #44566C;
+  font-size: 14px;
+  font-weight: 400;
 }
-.main_work_all .skill {
-  background-color: #ffb6bd;
+.main_work_games .article_proyect {
+  border-radius: 20px;
 }
-.main_work_all .game {
-  background-color: #d3ffd3;
+.main_work_games .article_proyect_container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
-.main_work_all .faster {
-  background-color: #cce2ff;
+.main_work_games .article_proyect_container_img {
+  margin-bottom: 15px;
+  border-radius: 10px;
 }
-.main_work_all .password {
-  background-color: #e1ffe5;
+.main_work_games .article_proyect_container_text {
+  display: flex;
+  align-self: flex-start;
 }
-.main_work_all .manager {
-  background-color: #f7dbff;
-}
-.main_work_all .guide {
-  background-color: #ffeecb;
+.main_work_games .article_proyect_container_text_title {
+  color: #44566C;
+  font-size: 14px;
+  font-weight: 400;
 }
 .main_work .hidden {
   display: none;
@@ -991,4 +1017,68 @@ img {
   width: 100%;
   max-width: 1440px;
   margin: auto;
+}
+
+.business {
+  background-color: #d9fdfa;
+}
+
+.creative {
+  background-color: #d5f0ff;
+}
+
+.zone {
+  background-color: #d9d8c7;
+}
+
+.nft {
+  background-color: #ffdae5;
+}
+
+.delivery {
+  background-color: #ffbfad;
+}
+
+.skin {
+  background-color: #e0f1ed;
+}
+
+.architecture {
+  background-color: #eaeaea;
+}
+
+.portfolio {
+  background-color: #dfdfdf;
+}
+
+.community {
+  background-color: #ffe0c1;
+}
+
+.food {
+  background-color: #faffc4;
+}
+
+.skill {
+  background-color: #ffb6bd;
+}
+
+.game {
+  background-color: #d3ffd3;
+}
+
+.faster {
+  background-color: #cce2ff;
+}
+
+.password {
+  background-color: #e1ffe5;
+}
+
+.manager {
+  background-color: #f7dbff;
+}
+
+.guide {
+  background-color: #ffeecb;
 }/*# sourceMappingURL=style.css.map */
