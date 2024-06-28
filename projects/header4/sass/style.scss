@@ -1,0 +1,291 @@
+//Declaramos las variables
+$primary-color-text: #8E8E8E;
+$text-color-menu: #2E2F38;
+$color-h1:#2E2F38;
+$color-button-text: #FFFFFF;
+$backround-color-button: #FA504D;
+$font-h1-h2: 'Belgrano';
+$font-text: 'Poppins';
+
+/**
+BEM(Block, Element, Modifier)
+[Bloque]
+[Bloque]__[Elemento]
+[Bloque]--[Modificador]
+[Elemento]--[Modificador]
+[Bloque]__[Elemento]--[Modificador]
+*/
+@mixin button-on{
+    text-decoration: none;
+    background-color: $backround-color-button;
+    padding: 10px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-weight: bold;
+}
+@mixin button-of{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-weight: bold;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1440px;
+    margin: auto;
+    padding:20px 20px 0px;
+    background-image: url(../img/background.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+    .header {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin-bottom: 70px;
+    align-items: center;
+        .header__nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 130px;
+            .nav__ul {
+                display: flex;
+                gap: 60px;
+                list-style: none;
+                color: $text-color-menu;
+            }
+        }
+  
+        .header__container-sign {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+            .container-sign__ul {
+                display: flex;
+                list-style: none;
+                text-decoration: none;
+
+                .container-sign__up{
+                    font-weight: bold;
+                    gap: 20px;
+                    .sign__up{
+                        text-decoration: none;
+                        color: white;
+                        padding-right: 20px;
+                        
+                    }
+                    .sign__in{
+                        text-decoration: none;
+                        background-color: $backround-color-button;
+                        padding: 10px;
+                        padding-right: 30px;
+                        padding-left: 30px;
+                        color: white;
+                    }
+                }
+            }
+
+        }
+    }
+    .main{
+      .section{
+        display: grid;
+        grid-template-columns: 60% 40%;
+        .section__article-information{
+            position: relative;
+            .article__h1 {
+                font-size: 60px;
+                font-family: 'Belgrano';
+                font-weight: 100;
+                line-height: 80px;
+                max-width: 750px;
+                margin-bottom: 20px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    max-width: 300px;
+                    max-height: 150px;
+                    background-image: url('../img/Vector.svg');
+                    background-repeat: no-repeat;
+                    background-size: 300px;
+                    left: 160px;
+                    z-index: 1;
+                }
+            }
+            
+            
+            .article__p{
+                font-size: 20px;
+                font-family: 'Poppins';
+                font-weight: 400;
+                color: $primary-color-text;
+                margin-bottom: 30px;
+            }
+            .article__p-underline{
+                text-decoration: underline;
+                text-decoration-color: #FA504D;
+                text-decoration-thickness: 3px;
+            }
+            .article__button{
+                display: flex;
+                margin-bottom: 30px;
+                .button__explore{
+                    @include button-on;
+                    padding-left: 60px;
+                    padding-right: 60px;
+                    margin-right: 40px;                    
+                }
+                .button__learn-more{
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    font-family: 'Poppins';
+                }
+            }
+            .article__featured{
+                display: flex;
+                flex-direction: column;
+                .article__h2{
+                    font-family: 'Belgrano';
+                    margin-bottom: 40px;
+                    font-weight:400;
+                    color: #2E2F38;
+                }
+                .featured__img{
+                    display: flex;
+                    gap: 30px;
+                    img{
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+        .article__buy{
+            background-image: url(../img/image.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: relative;
+            display: grid;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 180px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 83%;
+                height: 1px;
+                background-color: #000;
+                margin-bottom: 20px;
+                z-index: 2;
+              }
+            .buy__information{
+                position: absolute;
+                bottom: 110px;
+                left: 30px;
+                background-color: white;
+                max-height: 300px;
+                padding: 20px;
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .information__user{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    margin-bottom: 20px;
+                    gap: 130px;
+                    .user__img-name{
+                        display: flex;
+                        gap: 10px;
+                    }
+                    .user_id{
+                        font-family: 'Poppins';
+                        font-size: 20px;
+                        .user__atwork{
+                            font-weight: bold;
+                        }
+                    }
+                    .user__buy-quantity{
+                        grid-template-rows: 1fr 1fr;
+                        font-size: 20px;
+                        font-family: 'Poppins';
+                        .user__ofert{
+                            display: flex;
+                            justify-content: end;
+                        }
+                        .user__price{
+                            font-weight: bold;
+                            display: flex;
+                            justify-content: end;
+                        }
+                        
+                    }
+                }
+                .buy__button{
+                    margin-top: 20px;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    .confirm-buy{
+                        background-color: $backround-color-button;
+                        @include button-on;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .confirm-details{
+                        @include button-of;
+                        color: #FA504D;
+                        display: flex;
+                        justify-content: center;
+                        
+                        
+                    }
+                }
+                
+            }
+        }
+        @mixin additional-numbers{
+            font-family: 'Poppins';
+            font-weight: 700;
+            color: #FA504D;
+            font-size: 20px;
+        }
+        .buy__information__artist{
+            position: absolute;
+            bottom: 50px;
+            width: 90%;
+            .information__additional{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-left: 45px;
+                .additional{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    max-width: 500px;
+                    gap: 10px;
+                    .additional__numbers{
+                    @include additional-numbers;
+                    }
+                }
+                
+                .additional__text{
+                    font-family: 'Poppins';
+                    font-weight: none;
+                    font-size: 15px;
+                    color: white;
+                }
+            }
+            
+        }
+    }  
+    }
+}
