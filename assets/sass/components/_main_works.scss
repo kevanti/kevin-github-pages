@@ -11,7 +11,7 @@
         &_text{
             color: black;
             font-weight: 700;
-            font-size: clamp(20px, 2vw + 1rem, 30px);
+            font-size: clamp(25px, 2vw + 1rem, 35px);
             position: relative;
             &::after {
                 content: '';
@@ -52,6 +52,7 @@
         position: relative;
         &_menu{
             @include resumeInfo();
+            font-size: clamp(15px, 0.68vw + 12.35px, 19px);
             &:hover{
                 cursor: pointer;
             }
@@ -59,6 +60,18 @@
         #todos{
             color: #0cb7f2;
             font-weight: 500;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            justify-content: start;
+            gap: 35px;
+        }
+        @media (min-width: 992px) and (max-width: 1400px) {
+            justify-content: start;
+            gap: 40px;
+        }
+        @media (min-width: 1401px){
+            justify-content: start;
+            gap: 40px;
         }
     }
     &_all{
@@ -90,6 +103,33 @@
             
         }
 
+        @media (min-width: 768px) and (max-width: 991px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 48%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1400px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 32%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 1401px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 32%;
+                margin-bottom: 25px;
+            }
+        }
         
     }
     &_noReponsive{
@@ -107,6 +147,33 @@
                         
                     }
                 }
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 48%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1400px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 32%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 1401px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 32%;
+                margin-bottom: 25px;
             }
         }
     }
@@ -127,6 +194,33 @@
                 }
             }
         }
+        @media (min-width: 768px) and (max-width: 991px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 48%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1400px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 32%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 1401px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 32%;
+                margin-bottom: 25px;
+            }
+        }
     }
     &_games{
         .article_proyect{
@@ -143,6 +237,33 @@
                         
                     }
                 }
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 48%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1400px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 32%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 1401px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 32%;
+                margin-bottom: 25px;
             }
         }
     }

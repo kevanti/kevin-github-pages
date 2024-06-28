@@ -16,6 +16,7 @@ todos.addEventListener("click", (event)=>{
 
     sectionNoReponsive.classList.add("hidden");
     allProjects.classList.remove("hidden");
+    sectionGame.classList.add("hidden");
 
     todos.style.color = "#0cb7f2";
     noReponsive.style.color= '#44566C';
@@ -29,6 +30,8 @@ noReponsive.addEventListener("click", (event)=>{
 
     sectionNoReponsive.classList.remove("hidden");
     allProjects.classList.add("hidden");
+    sectionReponsive.classList.add("hidden");
+    sectionGame.classList.add("hidden");
 
     todos.style.color= '#44566C';
     noReponsive.style.color= "#0cb7f2";
@@ -43,6 +46,7 @@ reponsive.addEventListener("click", (event)=>{
     allProjects.classList.add("hidden");
     sectionNoReponsive.classList.add("hidden");
     sectionReponsive.classList.remove("hidden");
+    sectionGame.classList.add("hidden");
 
     reponsive.style.color = "#0cb7f2";
     todos.style.color = "#44566C";

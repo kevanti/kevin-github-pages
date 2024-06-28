@@ -1,0 +1,120 @@
+.main_contact{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 50px 20px;
+    margin: auto;
+    width: 90%;
+
+    &_title{
+        margin-bottom: 40px;
+        position: relative;
+        &_text{
+            color: black;
+            font-weight: 700;
+            font-size: clamp(26px, 2vw + 1rem, 32px);
+            position: relative;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 170px;
+                width: 65px;
+                height: 3px;
+                background-color: #0cb7f2;
+                transform: translateY(-50%);
+            }
+            @media (min-width: 768px) and (max-width: 991px) {
+                &::after {
+                    left: 200px;
+                    width: 130px;
+                }
+            }
+            @media (min-width: 992px) and (max-width: 1400px) {
+                &::after {
+                    left: 225px;
+                    width: 150px;
+                }    
+            }
+            @media (min-width: 1401px) {
+                &::after {
+                    left: 270px;
+                    width: 160px;
+                }    
+            }
+        }
+    }
+    &_information{
+        margin-bottom: 50px;
+        .information_article{
+            display: flex;
+            gap: 25px;
+            background-color: #FFF4F4;
+            padding: 20px 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            &_img{               
+                img{
+                    width: 27px;
+                }
+            }
+            &_text{
+
+                .text_title{
+                    @include resumeTitle();
+                    justify-content: start;
+                    font-size: 17px;
+                }
+                .text_number{
+                    @include resumeInfo();
+                }
+            }
+        }
+    }
+    &_gmail{
+        &_title{
+            @include resumeInfo();
+            font-size:18px;
+            font-weight: 500;
+            margin-bottom: 40px;
+        }
+        &_article{
+            .form_contact{
+                display: flex;
+                flex-direction: column;
+                &_label{
+                    @include resumeInfo();
+                    transition:  margin-bottom .2s ease-in;
+                }
+                &_input{
+                    border: none;
+                    border-bottom: 1px solid black;
+                    margin-bottom: 20px;
+                    color: black;
+                    &:focus{
+                        outline: none;
+                    }
+                    padding: 3px;
+                }
+                &_textArea{
+                    border: none;
+                    border-bottom: 1px solid black;
+                    margin-bottom: 40px;
+                    color: black;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                &_send{
+                    background-color: #0cb7f2;
+                    border: none;
+                    color: white;
+                    font-size: 17px;
+                    width: max-content;
+                    padding: 4px 8px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
