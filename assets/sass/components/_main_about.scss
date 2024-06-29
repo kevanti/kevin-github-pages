@@ -94,24 +94,28 @@
                         align-items: center;
                         gap: 17px;
                         margin-bottom: 17px;
+                        flex-wrap: wrap;
                         img{
                             height: min-content;
-                            width: 40px;
+                            width: 42px;
                             padding: 9px;
                             border-radius: 5px;
                             background-color: white;
                             box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
                         }
                         &_information{
+                            width: 70%;
                             &_title{
                                 color: gray;
                                 font-size: 13px;
+                                overflow-wrap: break-word;
                             }
     
                             &_text{
                                 color: black;
                                 font-size: 15px;
                                 font-weight: 500;
+                                overflow-wrap: break-word;
                             }
                         }
                     }

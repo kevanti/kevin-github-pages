@@ -1,8 +1,11 @@
 #root {
-    background-image: url(../../assets/img/Rectangle_1.svg), url(../../assets/img/Rectangle_2.svg), url(../../assets/img/Rectangle_3.svg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: left 0, bottom 0 right -100px, top 0 right 0;
-  }
+  background-image: url(../../assets/img/Rectangle_1.svg), url(../../assets/img/Rectangle_2.svg), url(../../assets/img/Rectangle_3.svg);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: left 0, bottom 0 right -100px, top 0 right 0;
+  min-height: 100%; /* Ocupa al menos la altura del contenido */
+  position: relative;
+}
+
   @media (min-width: 480px) {
     #root {
       background-size: 200px;

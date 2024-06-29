@@ -22,8 +22,10 @@ img {
 
 #root {
   background-image: url(../../assets/img/Rectangle_1.svg), url(../../assets/img/Rectangle_2.svg), url(../../assets/img/Rectangle_3.svg);
-  background-repeat: no-repeat, no-repeat;
+  background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 0, bottom 0 right -100px, top 0 right 0;
+  min-height: 100%; /* Ocupa al menos la altura del contenido */
+  position: relative;
 }
 
 @media (min-width: 480px) {
@@ -579,24 +581,30 @@ img {
   align-items: center;
   gap: 17px;
   margin-bottom: 17px;
+  flex-wrap: wrap;
 }
 .main_about_container_principal_container .article_info_block_container img {
   height: -moz-min-content;
   height: min-content;
-  width: 40px;
+  width: 42px;
   padding: 9px;
   border-radius: 5px;
   background-color: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+.main_about_container_principal_container .article_info_block_container_information {
+  width: 70%;
+}
 .main_about_container_principal_container .article_info_block_container_information_title {
   color: gray;
   font-size: 13px;
+  overflow-wrap: break-word;
 }
 .main_about_container_principal_container .article_info_block_container_information_text {
   color: black;
   font-size: 15px;
   font-weight: 500;
+  overflow-wrap: break-word;
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .main_about_container_principal_container .article_info_block {
@@ -1337,7 +1345,7 @@ img {
 }
 
 .container {
-  height: 100vh;
+  height: auto;
   width: 100%;
   max-width: 1440px;
   margin: auto;
