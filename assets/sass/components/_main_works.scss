@@ -273,6 +273,51 @@
             }
         }
     }
+    &_flyers{
+        .article_proyect{
+            border-radius: 20px;
+            &_container{
+                @include styleContainer();
+                &_img{
+                    @include styleImg();
+                }
+                &_text{
+                    @include styleText();
+                    &_title{
+                        @include resumeYear();
+                        
+                    }
+                }
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 48%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1400px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 46%;
+                margin-bottom: 25px;
+            }
+        }
+        @media (min-width: 1401px){
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .article_proyect{
+                width: 46%;
+                margin-bottom: 25px;
+            }
+        }
+    }
     .hidden{
         display: none;
     }
