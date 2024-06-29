@@ -49,17 +49,19 @@
             margin-bottom: 50px;
             .information_article{
                 display: flex;
-                gap: 25px;
                 background-color: #FFF4F4;
                 padding: 20px 20px;
                 border-radius: 10px;
                 margin-bottom: 20px;
-                &_img{               
+                flex-wrap: wrap;
+                gap: 20px;
+                &_img{
                     img{
                         width: 27px;
                     }
                 }
                 &_text{
+                    width: 70%;
                     .text_title{
                         @include resumeTitle();
                         justify-content: start;
@@ -69,6 +71,7 @@
                     .text_number{
                         @include resumeInfo();
                         font-size: clamp(15px, 0.68vw + 10px, 18px);
+                        overflow-wrap: break-word;
                     }
                 }
             }

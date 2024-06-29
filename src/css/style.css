@@ -1032,14 +1032,18 @@ img {
 }
 .main_contact_container_information .information_article {
   display: flex;
-  gap: 25px;
   background-color: #FFF4F4;
   padding: 20px 20px;
   border-radius: 10px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 .main_contact_container_information .information_article_img img {
   width: 27px;
+}
+.main_contact_container_information .information_article_text {
+  width: 70%;
 }
 .main_contact_container_information .information_article_text .text_title {
   color: black;
@@ -1057,6 +1061,7 @@ img {
   font-size: 15px;
   font-weight: 400;
   font-size: clamp(15px, 0.68vw + 10px, 18px);
+  overflow-wrap: break-word;
 }
 @media (min-width: 992px) and (max-width: 1400px) {
   .main_contact_container_information {
